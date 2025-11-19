@@ -1,0 +1,29 @@
+{
+    "name": "wonderlust-travel",
+    "version": "1.0.0",
+    "description": "This is a restful application for travel.",
+    "main": "meadowlark.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sumanta-k/wonderlust-travel.git"
+    },
+    "keywords": [
+        "travel",
+        "rest",
+        "api",
+        "nodejs",
+        "express"
+    ],
+    "author": "Sumanta Kumar Mohanta",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sumanta-k/wonderlust-travel/issues"
+    },
+    "homepage": "https://github.com/sumanta-k/wonderlust-travel#readme",
+    "dependencies": {
+        "express": "^5.1.0"
+    }
+}
