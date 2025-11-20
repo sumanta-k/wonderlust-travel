@@ -25,6 +25,7 @@
     },
     "homepage": "https://github.com/sumanta-k/wonderlust-travel#readme",
     "dependencies": {
-        "express": "^5.1.0"
+        "express": "^5.1.0",
+        "express3-handlebars": "^0.5.2"
     }
 }
