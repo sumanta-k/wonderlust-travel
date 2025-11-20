@@ -4,6 +4,16 @@ const app = express();
 
 app.set("port", process.env.PORT || 3000);
 
+app.get("/", function (req, res) {
+    res.type("text/plain");
+    res.send("Wonderlust Travel");
+});
+
+app.get("/about", function (req, res) {
+    res.type("text/plain");
+    res.send("About Wonderlust Travel");
+});
+
 // custom error || 404 page
 app.use(function (req, res) {
     res.type("text/plain");
@@ -18,16 +28,6 @@ app.use(function (err, req, res, next) {
     res.type("text/plain");
     res.status(500);
     res.send("500 - Server Error");
-});
-
-app.get("/", function (req, res) {
-    res.type("text/plain");
-    res.send("Wonderlust Travel");
-});
-
-app.get("/about", function (req, res) {
-    res.type("text/plain");
-    res.send("About Wonderlust Travel");
 });
 
 app.listen(app.get("port"), function () {
