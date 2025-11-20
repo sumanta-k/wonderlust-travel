@@ -6,6 +6,9 @@ const app = express();
 const handlebars = require("express3-handlebars").create({
     defaultLayout: "main",
 });
+
+app.engine("handlebars", handlebars.engine);
+
 app.set("port", process.env.PORT || 3000);
 
 app.get("/", function (req, res) {
