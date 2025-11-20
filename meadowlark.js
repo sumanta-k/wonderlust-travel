@@ -25,6 +25,11 @@ app.get("/", function (req, res) {
     res.send("Wonderlust Travel");
 });
 
+app.get("/about", function (req, res) {
+    res.type("text/plain");
+    res.send("About Wonderlust Travel");
+});
+
 app.listen(app.get("port"), function () {
     console.log("your service is running on port " + app.get("port"));
 });
