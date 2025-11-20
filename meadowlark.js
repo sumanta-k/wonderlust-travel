@@ -20,6 +20,11 @@ app.use(function (err, req, res, next) {
     res.send("500 - Server Error");
 });
 
+app.get("/", function (req, res) {
+    res.type("text/plain");
+    res.send("Wonderlust Travel");
+});
+
 app.listen(app.get("port"), function () {
     console.log("your service is running on port " + app.get("port"));
 });
